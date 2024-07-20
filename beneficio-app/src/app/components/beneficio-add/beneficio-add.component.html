@@ -1,0 +1,10 @@
+<h2>Adicionar Benefício</h2>
+<form (ngSubmit)="addBeneficio()">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" [(ngModel)]="beneficio.nome" name="nome">
+
+  <label for="descricao">Descrição:</label>
+  <input type="text" id="descricao" [(ngModel)]="beneficio.descricao" name="descricao">
+
+  <button type="submit">Adicionar</button>
+</form>

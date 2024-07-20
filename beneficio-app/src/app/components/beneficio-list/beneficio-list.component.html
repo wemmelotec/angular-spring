@@ -1,0 +1,7 @@
+<h2>Benefícios</h2>
+<button (click)="fetchBeneficios()">Listar Benefícios</button>
+<ul *ngIf="isListVisible">
+  <li *ngFor="let beneficio of beneficios">
+    {{ beneficio.nome }} - {{ beneficio.descricao }}
+  </li>
+</ul>
